@@ -1,22 +1,37 @@
 = NBNL Topology (TP)
 
-
+This data product is an implementation of the NBNL Topology Profile.
 
 .Data Product
 [d2,svg,theme=4]
 ----
-grid-rows: 5
-grid-columns: 5
-
-horizontal-gap: 160
-vertical-gap: 80
-
 vars: {
   d2-config: {
+    layout-engine: elk
     pad: 20
   }
 }
 
+classes: {
+  grid: {
+    style: {
+      fill: "#eccfcb"
+      shadow: true
+    }
+  }
+  enterprise: {
+    style: {
+      fill: "#d1e7c2"
+      shadow: true
+    }
+  }
+  market: {
+    style: {
+      fill: "#fffbef"
+      shadow: true
+    }
+  }
+}
 
 legend: "" {
   style: {
@@ -65,41 +80,24 @@ legend: "" {
   }
 }
 
-classes: {
-  empty: {
-    label: ""
-    style: {
-      fill: transparent
-      stroke: transparent
-    }
-  }
-  grid: {
-    style: {
-      fill: "#eccfcb"
-      shadow: true
-    }
-  }
-  enterprise: {
-    style: {
-      fill: "#d1e7c2"
-      shadow: true
-    }
-  }
-  market: {
-    style: {
-      fill: "#fffbef"
-      shadow: true
-    }
-  }
-  dataset: {
-    style: {
-      shadow: true
-    }
-  }
-}
+direction: down
+
+Terminal.class: grid
+TopologicalNode.class: grid
+
+TopologicalNode -> Terminal
 ----
+
+This data product requires the use of an _Equipment_ dataset for instantiation
+of its datasets.
+
+== Required background
+
+* knowledge of connectivity in the CIM;
+* knowledge of identification of individuals in the CIM;
+* knowledge of mRID persistence and master data management.
 
 == Additional artifacts
 
-* xref:schema:attachment$schemas/json_schema/dp_nbnl_topology.json_schema.json[JSON schema]
-* xref:schema:attachment$examples/dp_nbnl_topology.example.json[Example JSON instance data]
+* xref:schema:attachment$schemas/shacl/dp_nbnl_topology.shacl.ttl[SHACL schema]
+* xref:schema:attachment$examples/jsonld/dp_nbnl_topology.example.json[Example JSON-LD instance data]
