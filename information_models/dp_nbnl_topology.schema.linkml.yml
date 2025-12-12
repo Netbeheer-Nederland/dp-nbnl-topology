@@ -40,17 +40,11 @@ classes:
           if connectivity nodes are in the model, this association would probably
           not be used as an input specification.
         slot_uri: cim:TopologicalNode.Terminal
-        range: Terminal
+        range: curie
         required: true
         multivalued: true
     class_uri: cim:TopologicalNode
     tree_root: true
-  Terminal:
-    description: An AC electrical connection point to a piece of conducting equipment.
-      Terminals are connected at physical connection points called connectivity nodes.
-    from_schema: https://cim.ucaiug.io/ns#TC57CIM.IEC61970.Base.Core
-    is_a: ACDCTerminal
-    class_uri: cim:Terminal
   IdentifiedObject:
     description: This is a root class to provide common identification for all classes
       needing identification and naming attributes.
@@ -65,6 +59,7 @@ classes:
           \ attributes that identify CIM object elements."
         slot_uri: cim:IdentifiedObject.mRID
         range: string
+        identifier: true
         required: true
         multivalued: false
       name:
@@ -75,18 +70,3 @@ classes:
         required: false
         multivalued: false
     class_uri: cim:IdentifiedObject
-  PowerSystemResource:
-    description: A power system resource (PSR) can be an item of equipment such as
-      a switch, an equipment container containing many individual items of equipment
-      such as a substation, or an organisational entity such as sub-control area.
-      Power system resources can have measurements associated.
-    from_schema: https://cim.ucaiug.io/ns#TC57CIM.IEC61970.Base.Core
-    is_a: IdentifiedObject
-    class_uri: cim:PowerSystemResource
-  ACDCTerminal:
-    description: An electrical connection point (AC or DC) to a piece of conducting
-      equipment. Terminals are connected at physical connection points called connectivity
-      nodes.
-    from_schema: https://cim.ucaiug.io/ns#TC57CIM.IEC61970.Base.Core
-    is_a: IdentifiedObject
-    class_uri: cim:ACDCTerminal

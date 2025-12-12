@@ -100,4 +100,4 @@ of its datasets.
 == Additional artifacts
 
 * xref:schema:attachment$schemas/shacl/dp_nbnl_topology.shacl.ttl[SHACL schema]
-* xref:schema:attachment$examples/jsonld/dp_nbnl_topology.example.json[Example JSON-LD instance data]
+* xref:schema:attachment$examples/jsonld/dp_nbnl_topology.example.jsonld[Example JSON-LD instance data]
