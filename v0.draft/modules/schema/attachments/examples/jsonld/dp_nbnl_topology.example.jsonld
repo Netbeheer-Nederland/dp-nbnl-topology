@@ -27,6 +27,11 @@
       "@id": "https://modellen.netbeheernederland.nl/nbnl-topology/1.0"
     }
   ],
+  "dcterms:references": [
+    {
+      "@id": "urn:uuid:2808ccf7-c19c-4b96-aa65-7e21c2425458"
+    }
+  ],
   "@graph": [
     {
       "@id": "urn:uuid:4b56b177-9ab3-4b8a-ae44-996ab9f30c64",
