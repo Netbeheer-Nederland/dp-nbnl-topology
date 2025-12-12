@@ -1,0 +1,6 @@
+name: dp-nbnl-topology
+version: v0.draft
+title: NBNL Topology (TP)
+nav:
+- modules/ROOT/nav.adoc
+- modules/schema/nav.adoc

@@ -1,0 +1,34 @@
+= Index
+
+== Classes
+
+[cols="1,2"]
+|===
+| Name | Description
+
+
+| xref::class/IdentifiedObject.adoc[`IdentifiedObject`]
+| +++This is a root class to provide common identification for all classes needing identification and naming attributes.+++
+
+| xref::class/TopologicalNode.adoc[`TopologicalNode`]
+| +++For a detailed substation model a topological node is a set of
+connectivity nodes that, in the current network state, are connected
+together through any type of closed switches, including  jumpers.
+Topological nodes change as the current network state changes (i.e.,
+switches, breakers, etc. change state).
+
+For a planning model, switch statuses are not used to form topological
+nodes.  Instead they are manually created or deleted in a model builder
+tool. Topological nodes maintained this way are also called _busses_.+++
+
+|===
+
+== Types
+
+No types are defined in the schema.
+
+
+== Enumerations
+
+
+No enumerations are defined in the schema.

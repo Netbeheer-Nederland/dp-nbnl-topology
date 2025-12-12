@@ -1,0 +1,11 @@
+[.truncate]
+* Information model
+** xref::index.adoc[Index]
+** Classes
+*** xref::class/TopologicalNode.adoc[TopologicalNode (root)]
+
+*** xref::class/IdentifiedObject.adoc[IdentifiedObject]
+
+
+
+
